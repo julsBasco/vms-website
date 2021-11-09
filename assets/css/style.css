@@ -95,7 +95,7 @@ button.cta-1 {
 
 /* START OF HERO SECTION */
 section.hero {
-  background-image: url(../img/hero/heroimage.png);
+  background-image: url("../img/hero/heroimage.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
