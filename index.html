@@ -8,6 +8,10 @@
     <!-- start stylesheets -->
 
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- end of stylesheets -->
 
@@ -32,6 +36,7 @@
         src="./assets/img/logo/VMS-full-logo-300px.jpg"
         alt="logo"
       />
+
       <div class="link-button">
         <ul class="nav-links">
           <li><a href="#">HOME</a></li>
@@ -42,7 +47,20 @@
 
         <button class="cta-1">START YOUR VISIT</button>
       </div>
+      <!-- NAVBAR MOBILE MENU -->
+      <a class="icon-hamburger" onclick="JavaScript:toggleHamburger()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
+
+    <section class="hamburger-items">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">HOW IT WORKS</a></li>
+        <li><a href="#">SERVICES</a></li>
+      </ul>
+    </section>
 
     <!-- END OF NAVIGATION BAR -->
     <section class="hero">
@@ -60,4 +78,6 @@
     </section>
     <!-- START OF HERO SECTION -->
   </body>
+  <!-- JS SCRIPTS -->
+  <script src="./assets/js/navigation.js"></script>
 </html>
