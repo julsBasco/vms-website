@@ -21,6 +21,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  position: sticky;
+  top: 0px;
 }
 
 .logo-1 {
@@ -45,15 +47,15 @@ li a {
 }
 
 li a {
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 
 button.cta-1 {
   margin-left: 2rem;
   padding: 1rem;
-  font-size: 1rem;
-  font-weight: bolder;
+  font-size: 0.75rem;
+  font-weight: 900;
   color: white;
   border: none;
   border-radius: 5px;
@@ -70,12 +72,19 @@ button.cta-1 {
 }
 
 .hamburger-items {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  text-decoration: none;
   display: none;
+  background-color: white;
+  width: 100%;
 }
 
 .hamburger-items ul li {
-  margin-top: 1rem;
-  padding: 2rem;
+  justify-self: center;
+  list-style: none;
+  margin: 1rem;
 }
 
 /* END OF NAVIGATION MOBILE */
@@ -128,6 +137,7 @@ section.hero {
 }
 
 .hero-span-text {
+  font-size: 2rem;
   font-weight: 900;
 }
 
