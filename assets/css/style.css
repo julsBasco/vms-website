@@ -176,7 +176,7 @@ button.cta-2 {
 
 .flexHIW {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 5%;
   gap: 1rem 2rem;
@@ -352,8 +352,10 @@ button.cta-2 {
     display: none;
   }
   .fullSizeHIW {
-    width: 100%;
     display: block;
+  }
+  .fullSizeHIW img {
+    width: 100%;
   }
 }
 
