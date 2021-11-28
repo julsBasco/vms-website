@@ -1,10 +1,12 @@
-var x = document.querySelector(".hamburger-items");
-x.addEventListener(onclick, toggleHamburger());
+var hamburgerIcon = document.getElementById("hamburgerIcon");
+var hamburgerItems = document.getElementById("hamburgerItems");
+hamburgerIcon.addEventListener("click", toggleHamburger);
 
 function toggleHamburger() {
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  console.log("you clicked");
+  if (hamburgerItems.style.display !== "block") {
+    hamburgerItems.style.display = "block";
   } else {
-    x.style.display = "none";
+    hamburgerItems.style.display = "none";
   }
 }

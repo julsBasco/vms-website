@@ -128,12 +128,11 @@
         <button class="cta-1 cta-padding">LOGIN</button>
       </div>
       <!-- NAVBAR MOBILE MENU -->
-      <a class="icon-hamburger" onclick="JavaScript:toggleHamburger()">
-        <i class="fa fa-bars"></i>
+      <a class="icon-hamburger">
+        <i id="hamburgerIcon" class="fa fa-bars"></i>
       </a>
     </nav>
-
-    <section class="hamburger-items">
+    <section id="hamburgerItems" class="hamburger-items">
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT US</a></li>
@@ -141,7 +140,6 @@
         <li><a href="#">SERVICES</a></li>
       </ul>
     </section>
-
     <!-- END OF NAVIGATION BAR -->
 
     <!-- START OF HERO SECTION -->
@@ -158,174 +156,330 @@
       </div>
     </section>
 
-    <section id="about"></section>
-
     <!-- END OF HERO SECTION -->
+    <main>
+      <!-- START OF HOW IT WORKS -->
+      <section id="howItWorks">
+        <div class="container-howItWorks">
+          <h1>HOW IT WORKS</h1>
+          <figure class="fullSizeHIW">
+            <img src="./assets/img/Patient Journey.png" alt="" />
+          </figure>
 
-    <!-- START OF HOW IT WORKS -->
-    <section id="howItWorks">
-      <div class="container-howItWorks">
-        <h1>HOW IT WORKS</h1>
-        <img src="./assets/img/Patient Journey.png" alt="" />
-      </div>
-    </section>
-    <!-- END OF HOW IT WORKS -->
+          <div class="hideMe">
+            <div class="flexHIW">
+              <img
+                class="mobileSize"
+                src="./assets/img/icons/Patient Journey Icons/click.png"
+                alt=""
+              />
 
-    <!-- START OF MEET THE TEAM -->
+              <h2>Click to register</h2>
+            </div>
 
-    <section id="meetTheTeam">
-      <div class="container-meetTheTeam">
-        <!-- START OF DR MARK MCDANIEL -->
-        <div class="bg-white item-1">
-          <div class="mcDaniel-img">
-            <p>
-              <figure class="img-1">
-                <img src="./assets/img/meet-the-team/1.png" alt="" srcset="" />
-              </figure>
-              <figcaption class="caption-1">
-                <h3>DR. MARK</h3>
-                <h1>MCDANIEL</h1>
-                <h3 class="gray">Veteran Doctor</h3>
-              </figcaption>
-            </p>
-          </div>
-          <div class="mcDanielText">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
+            <p><i class="fa fa-arrow-down" aria-hidden="true"></i></p>
 
-        <!-- END OF DR MARK MCDANIEL -->
+            <div class="flexHIW">
+              <img
+                class="mobileSize"
+                src="./assets/img/icons/Patient Journey Icons/complete.png"
+                alt=""
+              />
 
-        <!-- START OF DR MARK MCDANIEL -->
-        <div class="item-1">
-          <div class="mcDaniel-img">
-            <p>
-              <figure class="img-1">
-                <img src="./assets/img/meet-the-team/1.png" alt="" srcset="" />
-              </figure>
-              <figcaption class="caption-1">
-                <h3>DR. MARK</h3>
-                <h1>MCDANIEL</h1>
-                <h3 class="gray">Veteran Doctor</h3>
-              </figcaption>
-            </p>
-          </div>
-          <div class="mcDanielText">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-        <!-- END OF DR MARK MCDANIEL -->
-
-        <!-- START OF DR MARK MCDANIEL -->
-        <div class="bg-white item-1">
-          <div class="mcDaniel-img">
-            <p>
-              <figure class="img-1">
-                <img src="./assets/img/meet-the-team/1.png" alt="" srcset="" />
-              </figure>
-              <figcaption class="caption-1">
-                <h3>DR. MARK</h3>
-                <h1>MCDANIEL</h1>
-                <h3 class="gray">Veteran Doctor</h3>
-              </figcaption>
-            </p>
-          </div>
-          <div class="mcDanielText">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+              <h2>Complete the intake form</h2>
+            </div>
+            <p><i class="fa fa-arrow-down" aria-hidden="true"></i></p>
+            <div class="flexHIW">
+              <img
+                class="mobileSize"
+                src="./assets/img/icons/Patient Journey Icons/schedule.png"
+                alt=""
+              />
+              <h2>Schedule your appointment</h2>
+            </div>
+            <p><i class="fa fa-arrow-down" aria-hidden="true"></i></p>
+            <div class="flexHIW">
+              <img
+                class="mobileSize"
+                src="./assets/img/icons/Patient Journey Icons/requirements.png"
+                alt=""
+              />
+              <h2>Complete your requirements</h2>
+            </div>
+            <p><i class="fa fa-arrow-down" aria-hidden="true"></i></p>
+            <div class="flexHIW">
+              <img
+                class="mobileSize"
+                src="./assets/img/icons/Patient Journey Icons/appointment.png"
+                alt=""
+              />
+              <h2>Attend your appointment</h2>
+            </div>
+            <p><i class="fa fa-arrow-down" aria-hidden="true"></i></p>
+            <div class="flexHIW">
+              <img
+                class="mobileSize"
+                src="./assets/img/icons/Patient Journey Icons/IMO.png"
+                alt=""
+              />
+              <h2>Wait for your IMO</h2>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- END OF HOW IT WORKS -->
 
-        <!-- END OF DR MARK MCDANIEL -->
+      <!-- START OF MEET THE TEAM -->
 
-        <!-- START OF DR MARK MCDANIEL -->
-        <div class="item-1">
-          <div class="mcDaniel-img">
-            <p>
-              <figure class="img-1">
-                <img src="./assets/img/meet-the-team/1.png" alt="" srcset="" />
-              </figure>
-              <figcaption class="caption-1">
-                <h3>DR. MARK</h3>
-                <h1>MCDANIEL</h1>
-                <h3 class="gray">Veteran Doctor</h3>
-              </figcaption>
-            </p>
+      <section id="meetTheTeam">
+        <div class="container-meetTheTeam">
+          <h1>MEET THE TEAM</h1>
+          <!-- START OF DR MARK MCDANIEL -->
+          <div class="bg-white item-1">
+            <div class="mcDaniel-img">
+              <p>
+                <figure class="img-1">
+                  <img
+                    src="./assets/img/meet-the-team/1.png"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <figcaption class="caption-1">
+                  <h3>DR. MARK</h3>
+                  <h1>MCDANIEL</h1>
+                  <h3 class="gray">Veteran Doctor</h3>
+                </figcaption>
+              </p>
+            </div>
+            <div class="mcDanielText">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
           </div>
-          <div class="mcDanielText">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+
+          <!-- END OF DR MARK MCDANIEL -->
+
+          <!-- START OF DR MARK MCDANIEL -->
+          <div class="item-1">
+            <div class="mcDaniel-img">
+              <p>
+                <figure class="img-1">
+                  <img
+                    src="./assets/img/meet-the-team/1.png"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <figcaption class="caption-1">
+                  <h3>DR. MARK</h3>
+                  <h1>MCDANIEL</h1>
+                  <h3 class="gray">Veteran Doctor</h3>
+                </figcaption>
+              </p>
+            </div>
+            <div class="mcDanielText">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <!-- END OF DR MARK MCDANIEL -->
+
+          <!-- START OF DR MARK MCDANIEL -->
+          <div class="bg-white item-1">
+            <div class="mcDaniel-img">
+              <p>
+                <figure class="img-1">
+                  <img
+                    src="./assets/img/meet-the-team/1.png"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <figcaption class="caption-1">
+                  <h3>DR. MARK</h3>
+                  <h1>MCDANIEL</h1>
+                  <h3 class="gray">Veteran Doctor</h3>
+                </figcaption>
+              </p>
+            </div>
+            <div class="mcDanielText">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+
+          <!-- END OF DR MARK MCDANIEL -->
+
+          <!-- START OF DR MARK MCDANIEL -->
+          <div class="item-1">
+            <div class="mcDaniel-img">
+              <p>
+                <figure class="img-1">
+                  <img
+                    src="./assets/img/meet-the-team/1.png"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <figcaption class="caption-1">
+                  <h3>DR. MARK</h3>
+                  <h1>MCDANIEL</h1>
+                  <h3 class="gray">Veteran Doctor</h3>
+                </figcaption>
+              </p>
+            </div>
+            <div class="mcDanielText">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <!-- END OF DR MARK MCDANIEL -->
+        </div>
+      </section>
+      <!-- END OF MEET THE TEAM -->
+
+      <!-- START OF ABOUT PAGE -->
+      <section id="about" class="about-section">
+        <div class="container-flex-allCentered">
+          <div class="mission box">
+            <div>
+              <h1>MISSION</h1>
+              <p>
+                To provide quality medical service and opinions for veterans of
+                the armed forces.
+              </p>
+            </div>
+          </div>
+          <div class="vision box">
+            <div>
+              <h1>VISION</h1>
+              <p>
+                To become the most trusted virtual medical service organization
+                for veterans.
+              </p>
+            </div>
+          </div>
+          <div class="purpose box">
+            <div>
+              <h1>PURPOSE</h1>
+              <p>
+                To put our passion for Veterans and our expertise together to
+                ensure that Veterans receive the disability benefits they
+                deserve
+              </p>
+            </div>
           </div>
         </div>
-        <!-- END OF DR MARK MCDANIEL -->
-      </div>
-    </section>
-    <!-- END OF MEET THE TEAM -->
+      </section>
+      <!-- END OF ABOUT PAGE -->
 
-    <!-- START OF ABOUT PAGE -->
-    <section id="about" class="about-section">
-      <div class="container-flex-allCentered">
-        <div class="mission box">
-          <div>
-            <h1>MISSION</h1>
-            <p>
-              To provide quality medical service and opinions for veterans of
-              the armed forces.
-            </p>
+      <!-- START OF CORE VALUES -->
+      <section id="core">
+        <div class="container">
+          <div class="boxes">
+            <div class="boxTop">
+              <h1>01</h1>
+            </div>
+            <div class="boxBottom coreValuesGrid">
+              <div class="coreValue">
+                <h1>RESPECT</h1>
+              </div>
+              <div class="coreValueDetails">
+                <p>
+                  We are honored to serve you and respect where you are today.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxes">
+            <div class="boxTop">
+              <h1>02</h1>
+            </div>
+            <div class="boxBottom coreValuesGrid">
+              <div class="coreValue">
+                <h1>EXPERIENCE</h1>
+              </div>
+              <div class="coreValueDetails">
+                <p>
+                  We will research the medical literature and ensure that we are
+                  using the best evidence to support your claim.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxes">
+            <div class="boxTop">
+              <h1>03</h1>
+            </div>
+            <div class="boxBottom coreValuesGrid">
+              <div class="coreValue">
+                <h1>INTEGRITY</h1>
+              </div>
+              <div class="coreValueDetails">
+                <p>
+                  We will give you an honest answer about your claim and work to
+                  secure the best possible disability rating.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxes">
+            <div class="boxTop">
+              <h1>04</h1>
+            </div>
+            <div class="boxBottom coreValuesGrid">
+              <div class="coreValue">
+                <h1>BUSINESS <br />MINDED</h1>
+              </div>
+              <div class="coreValueDetails">
+                <p>
+                  We will give you an honest answer about your claim and work to
+                  secure the best possible disability rating.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxes">
+            <div class="boxTop">
+              <h1>05</h1>
+            </div>
+            <div class="boxBottom coreValuesGrid">
+              <div class="coreValue">
+                <h1>QUALITY</h1>
+              </div>
+              <div class="coreValueDetails">
+                <p>
+                  We guarantee that our doctors are licensed in your State to
+                  treat you and have been verified to meet our standards.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="vision box">
-          <div>
-            <h1>VISION</h1>
-            <p>
-              To become the most trusted virtual medical service organization
-              for veterans.
-            </p>
-          </div>
-        </div>
-        <div class="purpose box">
-          <div>
-            <h1>PURPOSE</h1>
-            <p>
-              To put our passion for Veterans and our expertise together to
-              ensure that Veterans receive the disability benefits they deserve
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END OF ABOUT PAGE -->
-
-    <!-- START OF CORE VALUES -->
-    <section id="core">
-      <div class="container">
-        <div class="box-2"></div>
-        <div class="box-2"></div>
-        <div class="box-2"></div>
-        <div class="box-2"></div>
-        <div class="box-2"></div>
-      </div>
-    </section>
-    <!-- END OF CORE VALUES -->
-
+      </section>
+      <!-- END OF CORE VALUES -->
+    </main>
     <!-- JS SCRIPTS -->
     <script src="./assets/js/navigation.js"></script>
   </body>

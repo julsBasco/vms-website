@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: white;
-  position: sticky;
+  position: fixed;
   top: 0px;
 }
 
@@ -78,11 +78,12 @@ li a {
 .hamburger-items {
   display: flex;
   position: fixed;
+  top: 10vh;
   align-items: center;
   text-decoration: none;
   display: none;
   background-color: white;
-  width: 100%;
+  width: 100vw;
 }
 
 .hamburger-items ul li {
@@ -150,6 +151,7 @@ button.cta-2 {
 /* START OF HOW IT WORKS */
 #howItWorks {
   width: 100%;
+  padding: 5%;
   min-height: 30vh;
   height: auto;
   display: flex;
@@ -167,11 +169,31 @@ button.cta-2 {
   font-size: 1.5rem;
   text-align: center;
 }
-.container-howItWorks img {
-  margin: 0;
-  width: 100%;
-  height: auto;
+
+.hideMe {
+  display: block;
 }
+
+.flexHIW {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5%;
+  gap: 1rem 2rem;
+  flex-flow: column row wrap;
+}
+
+.mobileSize {
+  height: 2rem;
+}
+.container-howItWorks div p {
+  text-align: center;
+}
+
+.centerThis {
+  text-align: center;
+}
+
 /* END OF HOW IT WORKS */
 
 /* START OF MEET THE TEAM */
@@ -200,7 +222,6 @@ button.cta-2 {
   padding: 5%;
   grid-area: 1/2/2/3;
   text-align: center;
-  display: block;
 }
 
 .mcDanielText {
@@ -263,6 +284,41 @@ button.cta-2 {
 
 /* END OF ABOUT SECTION */
 
+/* START OF CORE VALUES */
+.boxes {
+  padding: 1rem;
+}
+
+.boxTop h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.boxBottom {
+  border-top: 4px solid rgba(94, 180, 163, 1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 1rem 2rem;
+  padding-top: 1rem;
+}
+
+.coreValue h1 {
+  font-size: 1.3rem;
+  color: #0e3c64;
+}
+
+.coreValueDetails {
+}
+
+.coreValueDetails p {
+  font-size: 1rem;
+  font-style: normal;
+
+  text-align: center;
+}
+/* END OF CORE VALUES */
+
 /* START OF MEDIA QUERIES  */
 
 /* START NAVIGATION */
@@ -274,6 +330,30 @@ button.cta-2 {
 
   .icon-hamburger {
     display: inline;
+  }
+
+  /* HOW IT WORKS */
+  .fullSizeHIW {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .link-button {
+    display: none;
+  }
+
+  .icon-hamburger {
+    display: inline;
+  }
+
+  /* HOW IT WORKS */
+  .hideMe {
+    display: none;
+  }
+  .fullSizeHIW {
+    width: 100%;
+    display: block;
   }
 }
 
