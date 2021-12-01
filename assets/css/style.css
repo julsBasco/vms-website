@@ -10,7 +10,20 @@
 body {
   height: 3000px;
 }
+/* SVG'S */
+.meetTheTeam-up {
+  position: relative;
+  bottom: -10px;
+  z-index: -1;
+  filter: drop-shadow(0px -14px 10px rgb(0 0 0 / 0.25));
+}
 
+.meetTheTeam-down {
+  position: relative;
+  bottom: 10px;
+  z-index: -1;
+  filter: drop-shadow(0px 14px 10px rgb(0 0 0 / 0.25));
+}
 /* START OF NAVIGATION  */
 
 .navigation {
@@ -31,35 +44,41 @@ body {
 }
 
 .link-button {
+  height: 100%;
+  justify-content: center;
+  align-content: center;
   display: flex;
 }
 
-ul.nav-links {
-  list-style: none;
-  align-items: center;
+.nav-links {
   display: flex;
 }
 
-li a {
+.nav-links li,
+a {
   text-decoration: none;
+  list-style: none;
+  text-align: center;
+  align-self: center;
+  font-size: 0.8rem;
   color: black;
-  margin-left: 2rem;
 }
 
-li a {
-  font-size: 0.75rem;
-  font-weight: bold;
+.nav-links a {
+  margin: 0 1rem;
 }
 
 .cta-1 {
-  margin-left: 2rem;
-  padding: 1rem;
+  align-self: center;
+  justify-self: center;
   font-size: 1rem;
   font-weight: 900;
   color: white;
   border: none;
+  margin: 0 1rem;
+  height: 60%;
+  width: 10rem;
   border-radius: 100px 100px;
-  width: 12rem;
   background-image: linear-gradient(
     rgba(40, 160, 214, 1),
     rgba(1, 131, 244, 1)
@@ -116,7 +135,6 @@ li a {
 }
 
 .hero-text-container h3 {
-  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 400;
@@ -132,18 +150,20 @@ li a {
   font-weight: 900;
 }
 
-.hero-text-container button {
-  margin-top: 3rem;
-}
-
-button.cta-2 {
-  padding: 1rem;
-  font-size: 0.75rem;
+.cta-2 {
+  align-self: center;
+  justify-self: center;
+  font-size: 1rem;
   font-weight: 900;
   color: white;
   border: none;
-  border-radius: 5px;
-  background-color: #0e3c64;
+  padding: 2% 4%;
+  margin-top: 1rem;
+  border-radius: 100px 100px;
+  background-image: linear-gradient(
+    rgba(40, 160, 214, 1),
+    rgba(1, 131, 244, 1)
+  );
 }
 
 /* END OF HERO SECTION */
@@ -224,6 +244,18 @@ button.cta-2 {
   color: white;
 }
 
+.gray {
+  color: rgba(0, 0, 0, 0.59);
+}
+
+.caption-1 {
+  margin-top: 6%;
+}
+
+.caption-1 h1 {
+  font-size: 1.5rem;
+}
+
 .bg-white {
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -253,13 +285,18 @@ button.cta-2 {
 .leftText {
   padding: 5%;
   grid-area: 2/1/3/4;
+  align-self: start;
   text-align: center;
 }
 
+.leftText p,
+.rightText p {
+  font-size: 80%;
+}
+
 .img-left img {
-  width: 80%;
+  width: 100%;
   border-radius: 50%;
-  border: 5px solid red;
 }
 
 .right-img {
@@ -271,13 +308,13 @@ button.cta-2 {
 .rightText {
   padding: 5%;
   grid-area: 2/1/3/4;
+  align-self: start;
   text-align: center;
 }
 
 .img-right img {
   width: 80%;
   border-radius: 50%;
-  border: 5px solid red;
 }
 /* END OF MEET THE TEAM */
 
@@ -305,25 +342,28 @@ button.cta-2 {
 
 .box {
   display: flex;
-  justify-content: center;
-  align-items: top;
-  padding: 3%;
-  padding-top: 5%;
-  max-width: 13rem;
-  height: 20rem;
+  flex-direction: column;
+  width: 10rem;
+  height: 15rem;
+  padding: 1%;
+  justify-items: center;
+  align-content: start;
   background-color: white;
   text-align: center;
+  border-radius: 40px 0 40px 0;
   box-shadow: -22px 25px 14px 0px rgba(0, 0, 0, 0.25);
 }
 
 .box h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 150%;
+
+  margin: 20% 0;
 }
 
 .box p {
-  font-size: 1;
+  font-size: 100%;
   font-style: italic;
+  text-align: center;
 }
 
 /* END OF ABOUT SECTION */
@@ -383,12 +423,16 @@ button.cta-2 {
 }
 
 @media only screen and (min-width: 1000px) {
+  .navigation {
+    padding: 0 10%;
+  }
+
   .link-button {
-    display: none;
+    display: flex;
   }
 
   .icon-hamburger {
-    display: inline;
+    display: none;
   }
 
   /* HOW IT WORKS */
@@ -407,6 +451,7 @@ button.cta-2 {
   .item-1,
   .item-2 {
     grid-template-rows: 1fr;
+    padding: 5% 20%;
   }
 
   .left-img {
@@ -419,13 +464,13 @@ button.cta-2 {
   .leftText {
     padding: 5%;
     grid-area: 1/2/2/4;
+    align-self: center;
     text-align: center;
   }
 
   .img-left img {
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
-    border: 5px solid red;
   }
 
   .right-img {
@@ -438,12 +483,23 @@ button.cta-2 {
   .rightText {
     padding: 5%;
     grid-area: 1/1/2/3;
+    align-self: center;
     text-align: center;
   }
 
   .img-right img {
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
-    border: 5px solid red;
+  }
+
+  /* CORE VALUES */
+  .container {
+    padding: 5% 20%;
+  }
+
+  .boxBottom {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100%;
   }
 }
