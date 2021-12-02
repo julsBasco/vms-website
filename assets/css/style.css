@@ -28,7 +28,7 @@ body {
 
 .navigation {
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
@@ -62,10 +62,11 @@ a {
   align-self: center;
   font-size: 0.8rem;
   color: black;
+  word-wrap: normal;
 }
 
 .nav-links a {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 .cta-1 {
@@ -97,7 +98,7 @@ a {
 .hamburger-items {
   display: flex;
   position: fixed;
-  top: 10vh;
+  top: 15vh;
   align-items: center;
   text-decoration: none;
   display: none;
@@ -216,6 +217,75 @@ a {
 
 /* END OF HOW IT WORKS */
 
+/* START OF CONDITIONS WE TREAT */
+#conditionsWeTreat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 10% 0;
+}
+
+.CWT-title {
+  width: 100%;
+  margin: 5rem 0;
+  padding: 0 20%;
+  text-align: center;
+}
+.CWT-title h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.CWT-container {
+  padding: 0 10%;
+}
+
+.CWT-container,
+.CWT-left-column,
+.CWT-right-column {
+  width: 100%;
+}
+.CWT-grid-right {
+  display: grid;
+  margin: 3rem 0;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.CWT-grid-right img {
+  height: 6rem;
+  grid-area: 1/2/2/3;
+  justify-self: center;
+}
+
+.CWT-text-right {
+  grid-area: 1/1/2/2;
+  justify-self: end;
+  text-align: end;
+}
+
+.CWT-grid-left {
+  display: grid;
+  margin: 3rem 0;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.CWT-grid-left img {
+  height: 6rem;
+  grid-area: 1/1/2/2;
+  justify-self: center;
+}
+
+.CWT-text-left {
+  grid-area: 1/2/2/3;
+  justify-self: start;
+  text-align: start;
+}
+
+/* END OF CONDITIONS WE TREAT */
+
 /* START OF MEET THE TEAM */
 #meetTheTeam {
   width: 100%;
@@ -230,17 +300,18 @@ a {
 .meetOurTeam-Title {
   width: 100%;
   text-align: center;
-  margin: 5% 0;
+  margin: 10% 0;
 }
 
 .meetOurTeam-Title h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   color: black;
 }
 
 .meetOurTeam-Title h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 900;
   color: white;
 }
 
@@ -263,7 +334,7 @@ a {
 .item-1 {
   display: grid;
   align-items: center;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 7%;
 }
@@ -271,7 +342,7 @@ a {
 .item-2 {
   display: grid;
   align-items: center;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 7%;
 }
@@ -323,10 +394,10 @@ a {
 .about-section {
   height: auto;
   padding: 10%;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgba(217, 237, 233, 1),
     rgba(101, 158, 207, 1)
-  );
+  ); */
 }
 
 .container-flex-allCentered {
@@ -369,8 +440,15 @@ a {
 /* END OF ABOUT SECTION */
 
 /* START OF CORE VALUES */
+.core-values-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 6% 0;
+  font-weight: 900;
+}
 .boxes {
-  padding: 1rem;
+  padding: 1rem 15%;
+  margin: 4rem 0;
 }
 
 .boxTop h1 {
@@ -422,7 +500,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   .navigation {
     padding: 0 10%;
   }
