@@ -421,6 +421,7 @@ a {
   align-content: start;
   background-color: white;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 40px 0 40px 0;
   box-shadow: -22px 25px 14px 0px rgba(0, 0, 0, 0.25);
 }
@@ -524,6 +525,21 @@ a {
     width: 100%;
   }
 
+  /* CONDITIONS WE TREAT */
+
+  #conditionsWeTreat {
+    margin-top: 0;
+  }
+
+  .CWT-container {
+    display: flex;
+    padding: 0 20%;
+  }
+
+  .CWT-right-column {
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
   /* MEET THE TEAM */
 
   .item-1,
@@ -568,6 +584,19 @@ a {
   .img-right img {
     width: 70%;
     border-radius: 50%;
+  }
+
+  /* ABOUT US */
+
+  .container-flex-allCentered {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    gap: 0;
+    flex-flow: row wrap;
   }
 
   /* CORE VALUES */
