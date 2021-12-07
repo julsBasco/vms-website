@@ -265,6 +265,10 @@ a {
   text-align: end;
 }
 
+.CWT-text-right p {
+  margin-bottom: 6%;
+}
+
 .CWT-grid-left {
   display: grid;
   margin: 3rem 0;
@@ -282,6 +286,9 @@ a {
   grid-area: 1/2/2/3;
   justify-self: start;
   text-align: start;
+}
+.CWT-text-left p {
+  margin-bottom: 6%;
 }
 
 /* END OF CONDITIONS WE TREAT */
@@ -534,6 +541,7 @@ a {
   .CWT-container {
     display: flex;
     padding: 0 20%;
+    margin-bottom: 5%;
   }
 
   .CWT-right-column {
