@@ -267,6 +267,9 @@ a {
 
 .CWT-text-right p {
   margin-bottom: 6%;
+
+  word-break: unset;
+  word-wrap: unset;
 }
 
 .CWT-grid-left {
@@ -289,6 +292,8 @@ a {
 }
 .CWT-text-left p {
   margin-bottom: 6%;
+  word-break: unset;
+  word-wrap: unset;
 }
 
 /* END OF CONDITIONS WE TREAT */
@@ -540,7 +545,7 @@ a {
 
   .CWT-container {
     display: flex;
-    padding: 0 20%;
+    padding: 0 10%;
     margin-bottom: 5%;
   }
 
@@ -548,6 +553,13 @@ a {
     border-left: 2px solid rgba(0, 0, 0, 0.1);
   }
 
+  .CWT-text-right p{
+    font-size: 1.3vw;
+  }
+
+  .CWT-text-left p {
+    font-size: 1.3vw;
+  }
   /* MEET THE TEAM */
 
   .item-1,
