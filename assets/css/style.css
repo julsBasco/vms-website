@@ -250,13 +250,16 @@ a {
   display: grid;
   margin: 3rem 0;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8rem;
   align-items: center;
+  align-content: center;
 }
 
 .CWT-grid-right img {
   height: 6rem;
   grid-area: 1/2/2/3;
   justify-self: center;
+  align-self: center;
 }
 
 .CWT-text-right {
@@ -276,6 +279,7 @@ a {
   display: grid;
   margin: 3rem 0;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 8rem;
   align-items: center;
 }
 
@@ -283,6 +287,7 @@ a {
   height: 6rem;
   grid-area: 1/1/2/2;
   justify-self: center;
+  align-self: center;
 }
 
 .CWT-text-left {
@@ -545,7 +550,7 @@ a {
 
   .CWT-container {
     display: flex;
-    padding: 0 10%;
+    padding: 0 5%;
     margin-bottom: 5%;
   }
 
@@ -553,13 +558,11 @@ a {
     border-left: 2px solid rgba(0, 0, 0, 0.1);
   }
 
-  .CWT-text-right p{
-    font-size: 1.3vw;
+  .CWT-text-right p,
+  .CWT-text-left p {
+    font-size: max(20px);
   }
 
-  .CWT-text-left p {
-    font-size: 1.3vw;
-  }
   /* MEET THE TEAM */
 
   .item-1,
