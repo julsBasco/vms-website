@@ -27,7 +27,7 @@ body {
 /* START OF NAVIGATION  */
 
 .navigation {
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   padding: 0 5%;
   display: flex;
@@ -39,8 +39,7 @@ body {
 }
 
 .logo-1 {
-  height: 100%;
-  margin-left: 1rem;
+  height: 50%;
 }
 
 .link-button {
@@ -90,7 +89,7 @@ a {
 
 /* START OF NAVIGATION MOBILE */
 .icon-hamburger {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: none;
   color: black;
 }
@@ -122,39 +121,34 @@ a {
   height: 90vh;
   width: 100%;
   display: grid;
-  grid-template: 100% / 50% 50%;
-  grid-template-areas: "quadrant-1 quadrant-2";
 }
 
 .hero-text-container {
-  grid-area: quadrant-1;
-  justify-self: center;
   align-self: center;
   text-align: center;
-  width: 100%;
-  margin-left: 10%;
+  padding: 0 5%;
 }
 
 .hero-text-container h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 400;
 }
 
 .hero-text-container h1 {
   font-weight: lighter;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hero-span-text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
 .cta-2 {
   align-self: center;
   justify-self: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 900;
   color: white;
   border: none;
@@ -529,6 +523,12 @@ a {
 
   .icon-hamburger {
     display: none;
+  }
+
+  /* HERO SECTION */
+
+  .hero-text-container {
+    justify-self: start;
   }
 
   /* HOW IT WORKS */
